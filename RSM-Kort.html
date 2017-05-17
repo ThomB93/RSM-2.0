@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <script src="http://code.createjs.com/easeljs-0.7.0.min.js"></script>
+                        <script>
+        var stage;
+
+        function init() {
+            stage = new createjs.Stage("kort");
+
+            var kort = new Image();
+            kort.src = "https://videnpiloterne.dk/wp-content/uploads/2016/01/rksk-web.png"; //kortet
+            var kortBitmap = new createjs.Bitmap(kort);
+            kortBitmap.scaleX="0.65";
+            kortBitmap.scaleY="0.65";
+            
+            stage.addChild(kortBitmap);
+            stage.update();
+            
+
+            var kirke = new Image();
+            kirke.src = "http://www.gratisskole.dk/sdata/minipic/008/00887-300.png"; //kirke
+            var kirkeBitmap = new createjs.Bitmap(kirke);
+            kirkeBitmap.x = "250";
+            kirkeBitmap.y = "250";
+            kirkeBitmap.scaleX="0.25";
+            kirkeBitmap.scaleY="0.25";
+            
+            stage.addChild(kirkeBitmap);
+
+
+            var mølle = new Image();
+            mølle.src = "https://img.clipartfest.com/d57989e2bab24e922d1777fb69ffcccc_windmill20clipart-clipart-wind-mill-clip-art_199-199.png" //mølle
+            var mølleBitmap = new createjs.Bitmap(mølle);
+            mølleBitmap.x = "335";
+            mølleBitmap.y = "100";
+            mølleBitmap.scaleX="0.4";
+            mølleBitmap.scaleY="0.4";
+
+            stage.addChild(mølleBitmap);
+
+            var skib = new Image();
+            skib.src = "http://www.gratisskole.dk/sdata/minipic/000/00068-300.png" //skib
+            var skibBitmap = new createjs.Bitmap(skib);
+            skibBitmap.x = "30";
+            skibBitmap.y = "375";
+            skibBitmap.scaleX="0.25";
+            skibBitmap.scaleY="0.25";
+
+            stage.addChild(skibBitmap);
+
+            var smed = new Image();
+            smed.src = "http://www.clipartbest.com/cliparts/RTd/GoM/RTdGoMGT9.svg" //smed
+            var smedBitmap = new createjs.Bitmap(smed);
+            smedBitmap.x = "100";
+            smedBitmap.y = "75";
+            smedBitmap.scaleX="0.225";
+            smedBitmap.scaleY="0.225";
+
+            stage.addChild(smedBitmap);
+
+            stage.update();
+
+           // kirke.addEventListener("click", function(evt){
+           //     console.log("der bliv klikket på billedet");
+           //     window.location ="www.google.dk";   
+           // });
+        }
+
+
+            </script>
+    </head>
+    <body onload="init()">
+
+        <canvas id="kort" width="500" height="525">
+        </canvas>
+
+    </body>
+    </html>
+    <!-- kirke "http://www.gratisskole.dk/sdata/minipic/008/00887-300.png"
+    <!-- skib "http://www.gratisskole.dk/sdata/minipic/000/00068-300.png"
+    <!-- mølle "https://img.clipartfest.com/d57989e2bab24e922d1777fb69ffcccc_windmill20clipart-clipart-wind-mill-clip-art_199-199.png"
+    <!-- smed "http://www.clipartbest.com/cliparts/RTd/GoM/RTdGoMGT9.svg"
+
+
+
+
+
+
+
+   
