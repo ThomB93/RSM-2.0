@@ -11,7 +11,7 @@ function init() {
     function addImage(url, scaleX, scaleY, locX, locY) {
         var image = new Image();
         image.src = url;
-        image.onload = function() {
+        image.onload = function() { //indsæt kun billede når det er loadet
             var imageBitmap = new createjs.Bitmap(image);
             imageBitmap.x = locX;
             imageBitmap.y = locY;
