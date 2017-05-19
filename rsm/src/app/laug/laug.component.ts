@@ -11,5 +11,8 @@ export class LaugComponent implements OnInit {
 
   ngOnInit() {
   }
+  navn : string;
+  
+
 
 }

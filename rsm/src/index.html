@@ -4,11 +4,24 @@
   <meta charset="utf-8">
   <title>Rsm</title>
   <base href="/">
-
+  <script src="http://code.createjs.com/easeljs-0.7.0.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet">
+  <script src="app.js"></script>
 </head>
-<body>
-  <app-root>Loading...</app-root>
-</body>
+<body onload="init()">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6">
+                    <canvas id="kort" width="500" height="525"></canvas>
+                </div>
+                <div class="col-xs-6">
+                    <app-root>
+                      
+                    </app-root>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
